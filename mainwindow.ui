@@ -169,7 +169,7 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="browseButton">
        <property name="text">
         <string>Browse</string>
        </property>
