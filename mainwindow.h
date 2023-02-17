@@ -17,9 +17,19 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    virtual void paintEvent(QPaintEvent* event);
+    void paintImage(QString fileName, int x, int y);
 
 private slots:
     void on_browseButton_clicked();
+
+    void on_saveButton_clicked();
+
+    void on_scaleSlider_valueChanged(int value);
+
+    void on_horizontalSlider_valueChanged(int value);
+
+    void on_verticalSlider_valueChanged(int value);
 
 private:
     Ui::MainWindow *ui;
